@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+	font-family: Sora;
+}
+
+body {
+	background-color: var(--Neutral-900);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.wpm {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.wpm2 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 23%;
+}
+
+.acc {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 23%;
+}
+
+.time {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 23%;
+}
+
+.vertical-line {
+	width: 2px;
+	background-color: var(--Neutral800);
+}
+
+.point {
+	display: flex;
+	gap: 30px;
+	padding: 10px;
+}
+
+.none {
+	display: none;
+}
+
+.grey {
+	color: var(--Neutral400);
+}
+
+.col {
+	color: var(--Neutral0);
+}
+
+.change2 {
+	display: none;
+}
+
+.white {
+	color: var(--Neutral0);
+	font-weight: 600;
+	font-size: 25px;
+}
+
+#diff {
+	padding: 12px;
+}
+
+.difficulty {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+#easy,
+#moyen,
+#hard {
+	color: var(--Neutral0);
+	padding: 8px;
+	border: 1px solid var(--Neutral500);
+	border-radius: 10px;
+}
+
+#easy:focus,
+#moyen:focus,
+#hard:focus {
+	color: var(--Blue400);
+	border: 1px solid var(--Blue400);
+}

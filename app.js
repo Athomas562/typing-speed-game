@@ -524,3 +524,31 @@ const difficile = [
 	"transdisciplinarite",
 	"multidimensionnel",
 ];
+
+const newText = [];
+
+const $genere = document.querySelector("#genere");
+const $start = document.querySelector(".start");
+const $dialog1 = document.querySelector(".first");
+const $btnAll = document.querySelectorAll(".difficulty");
+const $area = document.querySelector(".area");
+const $zone = document.querySelector("#backDiv");
+
+$start.addEventListener("click", () => {
+	$dialog1.close();
+	for (let button of $btnAll) {
+		if (button.checked) {
+			createListWord(button.value);
+		}
+	}
+});
+
+function createListWord(difficult) {
+	if (difficult === "easy") {
+		for (let i = 0; i < 80; i++) {
+			const random = Math.floor(Math.random() * facile.length);
+			newText.push(facile[random]);
+			$zone.innerHTML += `<span class="grey" id="span${i}">${newText[i]}</span> `;
+		}
+	}
+}

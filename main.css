@@ -76,11 +76,13 @@ nav {
 
 #diff {
 	padding: 12px;
+	border-bottom: 1px solid var(--Neutral800);
 }
 
 .difficulty {
 	display: flex;
 	align-items: center;
+
 	gap: 15px;
 }
 
@@ -98,4 +100,69 @@ nav {
 #hard:focus {
 	color: var(--Blue400);
 	border: 1px solid var(--Blue400);
+}
+
+main {
+	padding: 10px;
+}
+
+.first {
+	flex-direction: column;
+
+	background-color: var(--Neutral-900);
+}
+
+#choose {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 65vh;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.start {
+	padding: 15px;
+	border-radius: 10px;
+	background-color: var(--Blue600);
+	color: var(--Neutral0);
+}
+
+.or {
+	color: var(--Neutral0);
+}
+
+#area {
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	color: transparent;
+	font-family: var(--sora);
+	font-weight: 400;
+}
+
+.placeholder {
+	position: relative;
+	border: none;
+	width: 100%;
+	color: var(--neutral500);
+	font-family: var(--sora);
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 136%;
+	letter-spacing: 0.4px;
+	height: 55vh;
+}
+.placeholder::after {
+	z-index: 1;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	content: attr(data-placeholder);
+	pointer-events: none;
+	opacity: 1;
 }

@@ -1,168 +1,189 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 * {
-	font-family: Sora;
+  font-family: Sora;
 }
 
 body {
-	background-color: var(--Neutral-900);
+  background-color: var(--Neutral-900);
 }
 
 nav {
-	display: flex;
-	justify-content: space-between;
-	padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .wpm {
-	display: flex;
-	align-items: center;
-	gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .wpm2 {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	width: 23%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 23%;
 }
 
 .acc {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	width: 23%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 23%;
 }
 
 .time {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	width: 23%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 23%;
 }
 
 .vertical-line {
-	width: 2px;
-	background-color: var(--Neutral800);
+  width: 2px;
+  background-color: var(--Neutral800);
 }
 
 .point {
-	display: flex;
-	gap: 30px;
-	padding: 10px;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
 }
 
 .none {
-	display: none;
+  display: none;
 }
 
 .grey {
-	color: var(--Neutral400);
+  color: var(--Neutral400);
 }
 
 .col {
-	color: var(--Neutral0);
+  color: var(--Neutral0);
 }
 
 .change2 {
-	display: none;
+  display: none;
 }
 
 .white {
-	color: var(--Neutral0);
-	font-weight: 600;
-	font-size: 25px;
+  color: var(--Neutral0);
+  font-weight: 600;
+  font-size: 25px;
 }
 
 #diff {
-	padding: 12px;
-	border-bottom: 1px solid var(--Neutral800);
+  padding: 12px;
+  border-bottom: 1px solid var(--Neutral800);
 }
 
 .difficulty {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	gap: 15px;
+  gap: 15px;
 }
 
 #easy,
 #moyen,
 #hard {
-	color: var(--Neutral0);
-	padding: 8px;
-	border: 1px solid var(--Neutral500);
-	border-radius: 10px;
+  color: var(--Neutral0);
+  padding: 8px;
+  border: 1px solid var(--Neutral500);
+  border-radius: 10px;
 }
 
 #easy:focus,
 #moyen:focus,
 #hard:focus {
-	color: var(--Blue400);
-	border: 1px solid var(--Blue400);
+  color: var(--Blue400);
+  border: 1px solid var(--Blue400);
 }
 
 main {
-	padding: 10px;
+  padding: 10px;
 }
 
 .first {
-	flex-direction: column;
-
-	background-color: var(--Neutral-900);
+  position: absolute;
+  z-index: 3;
+  width: 95%;
+  flex-direction: column;
+  background-color: var(--Neutral-900);
 }
 
 #choose {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 65vh;
-	flex-direction: column;
-	gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .start {
-	padding: 15px;
-	border-radius: 10px;
-	background-color: var(--Blue600);
-	color: var(--Neutral0);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--Blue600);
+  color: var(--Neutral0);
 }
 
 .or {
-	color: var(--Neutral0);
+  color: var(--Neutral0);
 }
 
 #area {
-	left: 0px;
-	top: 0px;
-	z-index: 2;
-	position: absolute;
-	background-color: transparent;
-	border: none;
-	width: 100%;
-	color: transparent;
-	font-family: var(--sora);
-	font-weight: 400;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: transparent;
+  font-family: var(--sora);
+  font-weight: 400;
+}
+textarea {
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: transparent;
+  font-size: 32px;
+  line-height: 138%;
+  letter-spacing: 1px;
+  height: 55vh;
+  padding: 0px;
+  caret-color: white;
+}
+textarea:focus {
+  outline: none;
+}
+.placeholder {
+  position: relative;
+  border: none;
+  width: 100%;
+  color: var(--neutral500);
+  font-family: var(--sora);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 136%;
+  letter-spacing: 0.4px;
+  height: 55vh;
 }
 
-.placeholder {
-	position: relative;
-	border: none;
-	width: 100%;
-	color: var(--neutral500);
-	font-family: var(--sora);
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 136%;
-	letter-spacing: 0.4px;
-	height: 55vh;
-}
 .placeholder::after {
-	z-index: 1;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	content: attr(data-placeholder);
-	pointer-events: none;
-	opacity: 1;
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+ 
+  pointer-events: none;
+  opacity: 1;
 }
